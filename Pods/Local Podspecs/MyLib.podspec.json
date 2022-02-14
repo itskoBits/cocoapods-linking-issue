@@ -1,0 +1,39 @@
+{
+  "name": "MyLib",
+  "version": "1.0",
+  "homepage": "http://fake-home-page.com",
+  "authors": "My library authors",
+  "summary": "My library summery",
+  "description": "My library description",
+  "source": {
+    "git": "http://fake-repo-lib.git",
+    "tag": "v1.0"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "Classes/*.swift",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Tests/*.swift",
+      "dependencies": {
+        "MyLib/Demo": [
+
+        ]
+      },
+      "requires_app_host": true,
+      "app_host_name": "MyLib/Demo"
+    }
+  ],
+  "appspecs": [
+    {
+      "name": "Demo",
+      "source_files": "App/*.swift"
+    }
+  ]
+}
